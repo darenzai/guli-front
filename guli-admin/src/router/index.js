@@ -64,10 +64,33 @@ export const constantRouterMap = [
       }
     ]
   },
+  {
+    path: '/sta',
+    component: Layout,
+    //redirect: '/teacher/table',
+    name: '统计分析',
+    meta: { title: '统计分析', icon: 'example' },
+    children: [
+      {
+        path: 'create',
+        name: '生成数据',
+        component: () => import('@/views/edu/sta/create'),
+        meta: { title: '生成数据', icon: 'table' }
+      },
+      {
+        path: 'show',
+        name: '图表显示',
+        component: () => import('@/views/edu/sta/show'),
+        meta: { title: '图表显示', icon: 'tree' }
+      }
+    ]
+  },
+
+
    {
     path: '/subject',
     component: Layout,
-    redirect: '/subject/list',
+    //redirect: '/subject/list',
     name: '课程分类管理',
     meta: { title: '课程分类管理', icon: 'example' },
     children: [

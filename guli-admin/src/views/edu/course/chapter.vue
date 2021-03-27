@@ -5,7 +5,7 @@
     <el-steps
       :active="2"
       process-status="wait"
-      align-center
+      align-center  
       style="margin-bottom: 40px"
     >
       <el-step title="填写课程基本信息" />

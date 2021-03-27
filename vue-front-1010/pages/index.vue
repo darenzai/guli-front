@@ -102,7 +102,7 @@
                   <section class="i-teach-wrap">
                     <div class="i-teach-pic">
                       <a href="/teacher/1" :title="teacher.name">
-                        <img :alt="teacher.name" :src="teacher.avater" />
+                        <img :alt="teacher.name" :src="teacher.avatar" />
                       </a>
                     </div>
                     <div class="mt10 hLh30 txtOf tac">
@@ -117,7 +117,7 @@
                       <span class="fsize14 c-999">{{ teacher.carrer }}</span>
                     </div>
                     <div class="mt15 i-q-txt">
-                      <p class="c-999 f-fA">{{ teacher.intro }}</p>
+                      <p class="c-999 f-fA">{{ teacher.img }}</p>
                     </div>
                   </section>
                 </li>
