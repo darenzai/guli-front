@@ -1,5 +1,4 @@
 import Cookies from 'js-cookie'
-import request from './request'
 
 const TokenKey = 'Admin-Token'
 
@@ -14,4 +13,3 @@ export function setToken(token) {
 export function removeToken() {
   return Cookies.remove(TokenKey)
 }
-
